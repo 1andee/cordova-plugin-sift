@@ -1,0 +1,25 @@
+{
+  "name": "cordova-plugin-sift",
+  "version": "1.0.0",
+  "cordova": {
+    "id": "cordova-plugin-sift",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "description": "Cordova plugin for Sift",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1andee/cordova-plugin-sift.git"
+  },
+  "keywords": [
+    "sift",
+    "sift-cordova",
+    "sift-plugin",
+    "sift-cordova-ios",
+    "sift-cordova-android"
+  ],
+  "author": "Ian Duke, Jen Goetz",
+  "license": "ISC"
+}

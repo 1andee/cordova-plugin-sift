@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-sift"
+        version="1.0.0">
+    <name>Sift</name>
+    <description>Cordova plugin for Sift</description>
+    <license>MIT</license>
+    <keywords>sift,sift-cordova,sift-plugin,sift-cordova-ios,sift-cordova-android</keywords>
+    <repo>https://github.com/1andee/cordova-plugin-sift.git</repo>
+
+    <js-module name="Sift" src="www/sift.js">
+        <clobbers target="sift"/>
+        <clobbers target="cordova.plugins.sift"/>
+        <clobbers target="plugin.sift"/>
+    </js-module>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Sift">
+                <param name="ios-package" value="SiftBridge" onload="true"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/SiftBridge.h"/>
+        <source-file src="src/ios/SiftBridge.m"/>
+
+        <podspec>
+            <config>
+                <source url="https://cdn.cocoapods.org/"/>
+            </config>
+            <pods use-frameworks="true">
+                <pod name="Sift" spec="2.1.0"/>
+            </pods>
+        </podspec>
+    </platform>
+</plugin>
