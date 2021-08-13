@@ -20,6 +20,5 @@
     "sift-cordova-ios",
     "sift-cordova-android"
   ],
-  "author": "Ian Duke, Jen Goetz",
-  "license": "ISC"
+  "license": "MIT"
 }
